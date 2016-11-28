@@ -1,0 +1,22 @@
+<html> 
+  <head> 
+        <meta charset="utf-8"> 
+        <title>HelloWorld</title> 
+  </head> 
+    <body> 
+        <p> </p>
+        <p> </p>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> 
+        <script>  
+        d3.select("body").selectAll("p").text("");  
+
+var p = d3.select("body")
+          .selectAll("p")
+          .text("hello world");
+
+//修改段落的颜色和字体大小
+p.style("color","blue")
+ .style("font-size","72px");    
+        </script> 
+    </body> 
+</html>
